@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0b0215;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    height: 100vh;
+}
+
+.calc {
+    width: 400px;
+    padding: 1rem;
+    background-color: #23014F;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 5px 5px 0 #763dc0;
+}
+
+.calc h3 {
+    font-size: 1.2rem;
+    color: #e0e550;
+    font-weight: 300;
+}
+
+#operations {
+    text-align: right;
+}
+
+#previous_opearions,
+#current_operations {
+    min-height: 1.9em;
+    padding: .2em;
+    overflow-wrap: break-word;
+}
+
+#previous_operations {
+    color: #e0e550;
+    font-size: 1.4rem;
+}
+
+#current_operations {
+    min-height: 1.9em;
+    font-size: 3em;
+    font-weight: 700;
+    color: #e0e550;
+}
+
+#buttons_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 1rem;
+}
+
+#buttons_container button {
+    border: 1px solid transparent;
+    border-radius: 15px;
+    height: 4em;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.number_button {
+    background-color: #42157d;
+    color: #e0e550;
+    box-shadow: 2px 2px 0 #763dc0;
+}
+
+.number_button:hover{
+    background-color: #240a46;
+}
+
+.operator_button{
+    background-color: #200a3d;
+    color: #e0e550;
+    box-shadow: 2px 2px 0 #48217b;
+}
+
+.operator_button:hover{
+    background-color: #34096c;
+}
+
+#equal_button {
+    grid-column: span 2;
+    background-color: rgb(83, 192, 214);
+    color: #e0e550;
+    box-shadow: 2px 2px 0 rgb(40, 108, 122);
+}
+
+#equal_button:hover{
+    background-color: #e0e550;
+    color: rgb(83, 192, 214);
+}
+
